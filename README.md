@@ -1,12 +1,31 @@
-# React + Vite
+🎮 Small Games Collection
+Welcome to Small Games! A simple React app built with Vite featuring 4 fun little games and handy tools all in one place. 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🕹️ What’s inside?
+🧮 Calculator — Basic math made easy
 
-Currently, two official plugins are available:
+🔢 Guess the Number — Try to find the secret number!
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+💱 Currency Converter — Quick conversions between currencies
 
-## Expanding the ESLint configuration
+❌⭕ Tic Tac Toe — Classic morpion game against the computer
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🎯 Features
+Clean & minimal interface — no distractions! ✨
+
+Filter games easily to focus on what you want 🎯
+
+Navigation remembers your position for smooth experience 🧭
+
+Built with React & Vite for super fast loading ⚡
+
+🚀 How to run
+npm install
+npm run dev
+Open http://localhost:3000 in your browser and enjoy!
+
+💡 Why?
+I wanted to build something small but useful — a playground with simple games and tools.
+
+❤️ Thanks for checking it out!
+Feel free to contribute or report bugs. Have fun coding! 🖥️💙
