@@ -5,12 +5,18 @@
   text-align: center;
 }
 
-/* Grille pour les composants */
+#root h1 {
+  font-size: 22px;
+  color: #1f2937;
+  margin-bottom: 20px;
+}
+
+/* Toujours empilés verticalement */
 .components-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
 }
 
 /* Style de base pour chaque composant */
@@ -22,14 +28,17 @@
   transform: translateY(-5px);
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .components-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-
+@media (max-width: 480px) {
   #root {
     padding: 1rem;
+  }
+
+  .components-grid {
+    gap: 0.25rem;
+  }
+
+  .component-card {
+    padding: 0.5rem;
+    font-size: 14px;
   }
 }

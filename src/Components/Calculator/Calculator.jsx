@@ -22,7 +22,7 @@ function Calculator() {
       const calculation = eval(screen);
       setResult(calculation.toString());
     } catch {
-      setResult("Erreur");
+      setResult("Error");
     }
   };
 
@@ -84,10 +84,10 @@ function Calculator() {
       </div>
 
       <div className="display-and-result">
-        <h2>Affichage</h2>
+        <h2>Display</h2>
         <input type="text" value={screen} readOnly />
 
-        <h2>Résultat</h2>
+        <h2>Result</h2>
         <input type="text" value={result} readOnly />
       </div>
     </div>
