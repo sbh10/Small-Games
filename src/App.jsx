@@ -5,6 +5,7 @@ import "./App.css";
 import Converter from "./Components/Converter/Converter";
 import Navbar from "./Components/Navbar/Navbar";
 import TicTacToe from "./Components/TicTacToe/TicTacToe";
+import Quotes from "./Components/Quotes/Quotes";
 import React, { useState } from "react";
 
 function App() {
@@ -26,6 +27,9 @@ function App() {
           <div className="component-card">
             <TicTacToe />
           </div>
+          <div className="component-card">
+            <Quotes />
+          </div>
         </div>
       ) : (
         // Affiche un seul jeu choisi
@@ -34,6 +38,7 @@ function App() {
           {selectedGame === "guessnumber" && <Guess_the_number />}
           {selectedGame === "converter" && <Converter />}
           {selectedGame === "tictactoe" && <TicTacToe />}
+          {selectedGame === "quotes" && <Quotes />}
         </div>
       )}
       <Footer />

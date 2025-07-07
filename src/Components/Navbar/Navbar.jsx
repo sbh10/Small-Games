@@ -60,6 +60,18 @@ function Navbar({ selectedGame, setSelectedGame }) {
             Tic Tac Toe
           </a>
         </li>
+        <li>
+          <a
+            href="#quotes"
+            className={selectedGame === "quotes" ? "active" : ""}
+            onClick={(e) => {
+              e.preventDefault();
+              setSelectedGame("quotes");
+            }}
+          >
+            Quotes
+          </a>
+        </li>
       </ul>
     </nav>
   );

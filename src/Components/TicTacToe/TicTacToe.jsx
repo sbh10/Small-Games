@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./TicTacToe.css"; // On importe le CSS séparé
+import "./TicTacToe.css";
 
 const WIN_CONDITIONS = [
   [0, 1, 2],

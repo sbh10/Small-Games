@@ -6,6 +6,8 @@ const Converter = () => {
   const [amount, setAmount] = useState("");
   const [convertedAmount, setConvertedAmount] = useState("");
   const [selectedCurrency, setSelectedCurrency] = useState("Convert");
+  const [hasConverted, setHasConverted] = useState(false);
+  const [displayAmount, setDisplayAmount] = useState("");
 
   // Fonction de calcul (à l’intérieur du composant)
   const calculateResult = (currency) => {
@@ -13,6 +15,7 @@ const Converter = () => {
       const parsed = parseFloat(amount);
       if (isNaN(parsed)) {
         setConvertedAmount("Invalid input");
+        setHasConverted(false);
         return;
       }
 
@@ -23,20 +26,23 @@ const Converter = () => {
       const result = parsed * rate;
       setConvertedAmount(`${result.toFixed(2)} EUR`);
       setSelectedCurrency(currency); // Mettre à jour le bouton avec la devise sélectionnée
+      setDisplayAmount(amount);
+      setHasConverted(true);
     } catch (error) {
       console.error("Conversion error:", error);
       setConvertedAmount("Error");
+      setHasConverted(false);
     }
   };
 
   return (
     <div className="converter-container">
-      <h1>CURRENCY CONVERTER</h1>
+      <h1>CONVERT TO EUR</h1>
       <input
         type="text"
         value={amount}
         onChange={(e) => setAmount(e.target.value)}
-        placeholder="Enter an amount"
+        placeholder="Amount"
         id="sum"
       />
 
@@ -75,8 +81,8 @@ const Converter = () => {
       </div>
 
       <p className="converted-text">
-        {amount && convertedAmount
-          ? `${amount} ${selectedCurrency} amount to ${convertedAmount}`
+        {hasConverted
+          ? `${displayAmount} ${selectedCurrency} amount to ${convertedAmount}`
           : "Enter a value and select a currency"}
       </p>
     </div>
