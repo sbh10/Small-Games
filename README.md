@@ -10,6 +10,8 @@ Welcome to Small Games! A simple React app built with Vite featuring 4 fun littl
 
 ❌⭕ Tic Tac Toe — Classic morpion game against the computer
 
+🗣️ Funny Quote to Any Question — Get a witty or funny response every time!
+
 🎯 Features
 Clean & minimal interface — no distractions! ✨
 
@@ -28,4 +30,4 @@ Open http://localhost:3000 in your browser and enjoy!
 I wanted to build something small but useful — a playground with simple games and tools.
 
 ❤️ Thanks for checking it out!
-Feel free to contribute or report bugs. Have fun coding! 🖥️💙
+Feel free to contribute or report bugs. 🖥️💙
